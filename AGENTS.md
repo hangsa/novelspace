@@ -115,7 +115,7 @@ Step 4  写入 Notion Repos/Novels/analysis/nvl-analysis-{date}-{num}.md
 
 ## 八、红线（绝对禁止）
 
-- ❌ 用户未确认前写入文件
+- ❌ 用户未确认前写入文件（测试验证除外）
 - ❌ 跳过审查环节直接归档
 - ❌ 伪造子 Agent 输出
 - ❌ 同一内容超过3轮 nvl-checker 审查
