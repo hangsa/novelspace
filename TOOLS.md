@@ -85,7 +85,7 @@
 会话启动时，如项目处于进行中状态，验证：
 
 ```
-□ {workspace}/novels/{code}/ 文件夹存在
+□ Notion Repos/Novels/{code}/ 文件夹存在
 □ {code}-framer.md 可读（Phase 1 完成标志）
 □ {code}-outliner.md 可读（Phase 2 完成标志）
 □ 最新 {code}-section-{num}.md 编号与 MEMORY.md 记录一致

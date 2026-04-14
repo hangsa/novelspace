@@ -35,7 +35,7 @@ Step 1  收到需求 → 整理用户意图
 Step 2  调用 nvl-framer，传递用户原始需求 + 整理摘要
 Step 3  将框架草稿发送给用户
 Step 4  协调 nvl-framer 与用户多轮讨论，直到用户确认
-Step 5  新建 {workspace}/novels/{code}/ 文件夹
+Step 5  新建 Notion Repos/Novels/{code}/ 文件夹
          写入 {code}-framer.md
          告知用户："框架已归档，代号 {code}，现在启动大纲设计。"
 ```
@@ -73,7 +73,7 @@ Step 15  返回 Step 10，继续下一章节
 Step 1  确认研究范围（平台/题材/时间窗口）
 Step 2  调用 nvl-research
 Step 3  将报告发送给用户确认
-Step 4  写入 research/nvl-research-{date}-{num}.md
+Step 4  写入 Notion Repos/Novels/research/nvl-research-{date}-{num}.md
 ```
 
 ### 支流程2 — 数据分析
@@ -82,7 +82,7 @@ Step 4  写入 research/nvl-research-{date}-{num}.md
 Step 1  确认分析对象和数据来源
 Step 2  调用 nvl-analysis
 Step 3  将报告发送给用户确认
-Step 4  写入 analysis/nvl-analysis-{date}-{num}.md
+Step 4  写入 Notion Repos/Novels/analysis/nvl-analysis-{date}-{num}.md
 ```
 
 ---

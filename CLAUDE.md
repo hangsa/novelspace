@@ -40,15 +40,14 @@ Each sub-agent is a complete agent with its own directory (`framer/`, `plotter/`
 ## Workspace Structure
 
 ```
-{workspace}/
-├── novels/              ← Novel project root
-│   └── {code}/          ← Individual novel (named by code)
-│       ├── {code}-framer.md
-│       ├── {code}-outliner.md
-│       └── {code}-section-{num}.md
-├── research/            ← Trend reports
-│   └── nvl-research-{date}-{num}.md
-└── analysis/            ← Data analysis reports
+Notion Repos/Novels/     ← 小说项目根目录（Notion）
+│   └── {code}/          ← 单本小说（以代号命名）
+│       ├── {code}-framer.md       ← 小说框架
+│       ├── {code}-outliner.md     ← 剧情大纲
+│       └── {code}-section-{num}.md ← 章节最终稿
+└── research/            ← 趋势研究报告
+    └── nvl-research-{date}-{num}.md
+└── analysis/            ← 数据分析报告
     └── nvl-analysis-{date}-{num}.md
 ```
 
