@@ -35,10 +35,15 @@ Step 1  收到需求 → 整理用户意图
 Step 2  调用 nvl-framer，传递用户原始需求 + 整理摘要
 Step 3  将框架草稿发送给用户
 Step 4  协调 nvl-framer 与用户多轮讨论，直到用户确认
-Step 5  新建 Notion Repos/Novels/{code}/ 文件夹
-         写入 {code}-framer.md
+Step 5  在 Notion Repos/Novels 下创建项目子页面（页面标题：{code}）
+         将 {code}-framer.md 内容以块形式写入该页面
          告知用户："框架已归档，代号 {code}，现在启动大纲设计。"
 ```
+
+**Notion 操作：**
+- parent_id: `31e753f3-cc71-8031-a58c-e211334c4ab4`（Repos/Novels）
+- 页面标题：`{code}`
+- 内容：框架 Markdown 全文作为子块写入
 
 ### Phase 2：剧情大纲
 
@@ -46,9 +51,15 @@ Step 5  新建 Notion Repos/Novels/{code}/ 文件夹
 Step 6  调用 nvl-plotter，传递 {code}-framer.md 内容
 Step 7  将大纲草稿发送给用户
 Step 8  协调 nvl-plotter 与用户多轮讨论，直到用户确认
-Step 9  写入 {code}-outliner.md
+Step 9  在 {code} 项目页面下创建子页面（页面标题：剧情大纲）
+         将 {code}-outliner.md 内容以块形式写入
          告知用户："大纲已归档，准备开始第一章创作。"
 ```
+
+**Notion 操作：**
+- parent_id: `{code}` 页面 ID（Step 5 创建的页面）
+- 页面标题：`剧情大纲`
+- 内容：大纲 Markdown 全文作为子块写入
 
 ### Phase 3：章节创作与审查
 
@@ -59,9 +70,15 @@ Step 12  将审查意见发送给用户
 Step 13  审查-修改循环（最多3轮）：
            用户确认修改意见 → nvl-writer 修改 → nvl-checker 复审
          第3轮后仍有问题：将意见列表交用户决策
-Step 14  用户最终确认 → 写入 {code}-section-{num}.md
+Step 14  用户最终确认 → 在 {code} 项目页面下创建子页面（页面标题：第{num}章）
+         将章节正文写入该子页面
 Step 15  返回 Step 10，继续下一章节
 ```
+
+**Notion 操作（Step 14）：**
+- parent_id: `{code}` 页面 ID
+- 页面标题：`第{num}章`
+- 内容：章节正文 Markdown 全文作为子块写入
 
 ---
 
@@ -73,8 +90,14 @@ Step 15  返回 Step 10，继续下一章节
 Step 1  确认研究范围（平台/题材/时间窗口）
 Step 2  调用 nvl-research
 Step 3  将报告发送给用户确认
-Step 4  写入 Notion Repos/Novels/research/nvl-research-{date}-{num}.md
+Step 4  在 Notion Repos/Novels/research 下创建子页面（页面标题：nvl-research-{date}-{num}）
+         将报告内容以块形式写入
 ```
+
+**Notion 操作：**
+- parent_id: `31e753f3-cc71-8031-a58c-e211334c4ab4`（Repos/Novels）
+- 页面标题：`nvl-research-{date}-{num}`
+- 内容：报告 Markdown 全文作为子块写入
 
 ### 支流程2 — 数据分析
 
@@ -82,8 +105,14 @@ Step 4  写入 Notion Repos/Novels/research/nvl-research-{date}-{num}.md
 Step 1  确认分析对象和数据来源
 Step 2  调用 nvl-analysis
 Step 3  将报告发送给用户确认
-Step 4  写入 Notion Repos/Novels/analysis/nvl-analysis-{date}-{num}.md
+Step 4  在 Notion Repos/Novels/analysis 下创建子页面（页面标题：nvl-analysis-{date}-{num}）
+         将报告内容以块形式写入
 ```
+
+**Notion 操作：**
+- parent_id: `31e753f3-cc71-8031-a58c-e211334c4ab4`（Repos/Novels）
+- 页面标题：`nvl-analysis-{date}-{num}`
+- 内容：报告 Markdown 全文作为子块写入
 
 ---
 

@@ -101,4 +101,16 @@ default_encoding: UTF-8
 file_format: Markdown (.md)
 date_format: YYYYMMDD
 max_checker_rounds: 3
+
+## Notion 存储配置
+notion_root_page_id: 31e753f3-cc71-8031-a58c-e211334c4ab4  # Repos/Novels
+notion_api_key_path: ~/.config/notion/api_key
+
+## Notion 写入规则
+- 所有文件（框架、大纲、章节正文）均写入 Notion 子页面
+- 项目代号 {code} 对应一个 Notion 子页面（位于 Repos/Novels 下）
+- 剧情大纲、第N章 作为项目页面的子页面
+- 命名规则保持不变：{code}-framer.md → 页面标题「{code}」
+                                {code}-outliner.md → 页面标题「剧情大纲」
+                                {code}-section-{num}.md → 页面标题「第{num}章」
 ```
